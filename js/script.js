@@ -212,6 +212,26 @@ filterCards = function () {
 
 filterCards();
 
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        buttons.forEach(btn =>
+            btn.classList.remove('active')
+        );
+
+        button.classList.add('active');
+
+        currentCategory =
+            button.dataset.category;
+
+        filterCards();
+
+        document.querySelector('#menu').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
 // ==========================
 // MOSTRAR CATEGORIAS APENAS NO CARDÁPIO
 // ==========================
