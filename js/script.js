@@ -261,3 +261,24 @@ window.addEventListener(
 );
 
 handleCategoriesVisibility();
+
+// ==========================
+// MENSAGEM NO WHATSAPP POR ITEM SOLICITADO
+// ==========================
+
+const whatsappNumber = '5511933401221';
+
+document.querySelectorAll('.order-btn').forEach(button => {
+
+    const card = button.closest('.card');
+    const productName = card.querySelector('h3').textContent.trim();
+    const price = card.querySelector('.price').textContent.trim();
+
+    const message =
+        `Olá! Quero pedir o produto:%0A%0A** ${productName}%0A** ${price}%0A%0AVim pelo cardápio digital.`;
+
+    button.href =
+        `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    button.target = '_blank';
+});

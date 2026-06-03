@@ -404,6 +404,7 @@ section {
 }
 
 .promo-box {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     padding: 50px;
@@ -1308,4 +1309,18 @@ html {
 .logo:hover {
     opacity: .9;
     transform: translateY(-1px);
+}
+
+.card::before, .card::after 
+{ 
+    display: none; 
+}
+
+.header {
+    z-index: 9999;
+}
+
+.header-btn {
+    position: relative;
+    z-index: 10000;
 }
