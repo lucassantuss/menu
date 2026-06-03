@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Burgers | Cardápio Digital</title>
+
+    <meta name="description"
+        content="Cardápio digital premium da Urban Burgers. Hambúrgueres artesanais, combos, bebidas e sobremesas.">
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/urban-burgers.ico">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container nav">
+            <a href="#top" class="logo">
+                <img src="assets/icons/urban-burgers.png" alt="Urban Burgers">
+                <span>Urban Burgers</span>
+            </a>
+            <a href="https://wa.me/5511999999999" class="header-btn">
+                Fazer Pedido
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <img src="assets/imgs/banner.jpg" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                ⭐ 4.9 • Delivery 30-40 min
+            </div>
+
+            <h1>O melhor hambúrguer artesanal da cidade</h1>
+
+            <p>Smash burgers premium, combos especiais e delivery rápido.</p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">
+                    Ver Cardápio
+                </a>
+
+                <a href="https://wa.me/5511999999999" class="btn-secondary">
+                    WhatsApp
+                </a>
+            </div>
+
+            <div class="delivery-apps">
+
+                <span>iFood</span>
+                <span>Uber Eats</span>
+                <span>Delivery Próprio</span>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>+15k</strong>
+                    <span>Burgers vendidos</span>
+                </div>
+
+                <div class="stat">
+                    <strong>4.9★</strong>
+                    <span>Avaliação média</span>
+                </div>
+
+                <div class="stat">
+                    <strong>30min</strong>
+                    <span>Entrega média</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER PROMO-->
+
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-box">
+
+                <div>
+                    🔥 OFERTA DA SEMANA
+                </div>
+
+                <h2>
+                    Combo Urban
+                </h2>
+
+                <p>
+                    Burger artesanal + fritas crocantes + refrigerante gelado
+                </p>
+
+                <span>
+                    Apenas R$ 49,90
+                </span>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar hambúrguer, bebida, sobremesa...">
+            </div>
+            <div id="productCount" class="product-count">
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="categories">
+        <div class="container categories-wrapper">
+            <button class="category-btn active" data-category="todos">
+                Todos
+            </button>
+            <button class="category-btn" data-category="smash">
+                Smash
+            </button>
+            <button class="category-btn" data-category="premium">
+                Premium
+            </button>
+            <button class="category-btn" data-category="combos">
+                Combos
+            </button>
+            <button class="category-btn" data-category="acompanhamentos">
+                Fritas
+            </button>
+            <button class="category-btn" data-category="bebidas">
+                Bebidas
+            </button>
+            <button class="category-btn" data-category="milkshakes">
+                Milkshakes
+            </button>
+            <button class="category-btn" data-category="sobremesas">
+                Sobremesas
+            </button>
+        </div>
+    </section>
+
+    <!-- MENU -->
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-grid">
+
+                <!-- 0001 -->
+                <div class="card reveal" data-category="smash">
+                    <div class="badge">
+                        Mais pedido
+                    </div>
+
+                    <img src="assets/imgs/img0001.jpg" loading="lazy" alt="Smash Bacon Deluxe">
+
+                    <div class="card-content">
+                        <h3>Smash Bacon Deluxe</h3>
+
+                        <p>Pão brioche, smash burger, cheddar cremoso, bacon crocante e molho especial.</p>
+
+                        <div class="card-footer">
+                            <span class="price">
+                                R$ 34,90
+                            </span>
+
+                            <a href="#" class="order-btn">
+                                Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0002 -->
+                <div class="card reveal" data-category="combos">
+                    <div class="badge promo">
+                        Combo
+                    </div>
+
+                    <img src="assets/imgs/img0002.jpg" loading="lazy" alt="Combo Urban">
+
+                    <div class="card-content">
+                        <h3>Combo Urban</h3>
+
+                        <p>Burger artesanal + fritas crocantes + refrigerante gelado.</p>
+
+                        <div class="card-footer">
+                            <span class="price">
+                                R$ 49,90
+                            </span>
+
+                            <a href="#" class="order-btn">
+                                Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0003 -->
+                <div class="card reveal" data-category="bebidas">
+                    <img src="assets/imgs/img0003.jpg" loading="lazy" alt="Pink Lemonade">
+
+                    <div class="card-content">
+                        <h3>Pink Lemonade</h3>
+
+                        <p>Bebida artesanal refrescante com frutas vermelhas.</p>
+
+                        <div class="card-footer">
+                            <span class="price">
+                                R$ 14,90
+                            </span>
+
+                            <a href="#" class="order-btn">
+                                Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0004 -->
+                <div class="card reveal" data-category="sobremesas">
+                    <div class="badge">
+                        Novo
+                    </div>
+
+                    <img src="assets/imgs/img0004.jpg" loading="lazy" alt="Brownie Supreme">
+
+                    <div class="card-content">
+                        <h3>Brownie Supreme</h3>
+
+                        <p>Brownie quente com sorvete artesanal e calda premium.</p>
+
+                        <div class="card-footer">
+                            <span class="price">
+                                R$ 22,90
+                            </span>
+
+                            <a href="#" class="order-btn">
+                                Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0005 -->
+                <div class="card reveal" data-category="smash">
+
+                    <img src="assets/imgs/img0005.jpg" loading="lazy" alt="Smash Classic">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>🔥 Mais pedido</span>
+                            <span>180g</span>
+                        </div>
+
+                        <h3>Smash Classic</h3>
+
+                        <p>
+                            Smash burger, cheddar americano,
+                            cebola e molho da casa.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 29,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0006 -->
+                <div class="card reveal" data-category="premium">
+
+                    <img src="assets/imgs/img0006.jpg" loading="lazy" alt="Double Cheddar">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>⭐ Premium</span>
+                            <span>320g</span>
+                        </div>
+
+                        <h3>Double Cheddar</h3>
+
+                        <p>
+                            Dois burgers artesanais,
+                            cheddar cremoso e bacon.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 42,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0007 -->
+                <div class="card reveal" data-category="premium">
+
+                    <img src="assets/imgs/img0007.jpg" loading="lazy" alt="Urban Prime">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>👑 Chef</span>
+                            <span>350g</span>
+                        </div>
+
+                        <h3>Urban Prime</h3>
+
+                        <p>
+                            Burger premium,
+                            queijo suíço,
+                            bacon artesanal e molho especial.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 46,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0008 -->
+                <div class="card reveal" data-category="acompanhamentos">
+
+                    <img src="assets/imgs/img0008.jpg" loading="lazy" alt="Batata Cheddar Bacon">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>🍟 Favorita</span>
+                            <span>400g</span>
+                        </div>
+
+                        <h3>Batata Cheddar Bacon</h3>
+
+                        <p>
+                            Batatas crocantes,
+                            cheddar e bacon.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 22,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0009 -->
+                <div class="card reveal" data-category="milkshakes">
+
+                    <img src="assets/imgs/img0009.jpg" loading="lazy" alt="Milkshake Oreo">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>🥤 Gelado</span>
+                            <span>500ml</span>
+                        </div>
+
+                        <h3>Milkshake Oreo</h3>
+
+                        <p>
+                            Sorvete artesanal,
+                            Oreo e chantilly.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 18,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 0010 -->
+                <div class="card reveal" data-category="milkshakes">
+
+                    <img src="assets/imgs/img0010.jpg" loading="lazy" alt="Milkshake Nutella">
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <span>🔥 Novo</span>
+                            <span>500ml</span>
+                        </div>
+
+                        <h3>Milkshake Nutella</h3>
+
+                        <p>
+                            Nutella, sorvete premium
+                            e chantilly.
+                        </p>
+
+                        <div class="card-footer">
+                            <span class="price">R$ 21,90</span>
+                            <a href="#" class="order-btn">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AVALIAÇÕES -->
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews-title">
+                O que nossos clientes dizem
+            </h2>
+
+            <div class="review-grid">
+
+                <div class="review-card">
+                    <strong>★★★★★</strong>
+
+                    <p>
+                        Melhor hambúrguer da região.
+                        Atendimento rápido e sabor incrível.
+                    </p>
+
+                    <span>Lucas M.</span>
+                </div>
+
+                <div class="review-card">
+                    <strong>★★★★★</strong>
+
+                    <p>
+                        Batata cheddar perfeita.
+                        Entrega super rápida.
+                    </p>
+
+                    <span>Amanda S.</span>
+                </div>
+
+                <div class="review-card">
+                    <strong>★★★★★</strong>
+
+                    <p>
+                        Milkshake de Oreo é absurdo.
+                    </p>
+
+                    <span>Fernando P.</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- DELIVERY -->
+
+    <section class="delivery">
+        <div class="container delivery-box">
+            <div class="delivery-item">
+                🚀 Delivery rápido
+            </div>
+
+            <div class="delivery-item">
+                🕒 30-40 min
+            </div>
+
+            <div class="delivery-item">
+                📍 São Paulo e região
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA / LOCALIZAÇÃO -->
+
+    <section class="location">
+        <div class="container">
+            <div class="location-box">
+                <h2>
+                    📍 Nossa Unidade
+                </h2>
+
+                <p>
+                    Av. Paulista
+                </p>
+
+                <p>
+                    São Paulo - SP
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <h3>Urban Burgers</h3>
+
+            <p>Av. Paulista • São Paulo/SP</p>
+
+            <p>Segunda à Domingo • 18h às 23h</p>
+
+            <div class="footer-divider"></div>
+
+            <p class="footer-dev">
+                Desenvolvido por
+                <a href="https://lucassantuss.com.br" target="_blank" rel="noopener">
+                    Lucassantuss
+                </a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- FLOAT BUTTON -->
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-float">
+        <span>💬</span>
+    </a>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
